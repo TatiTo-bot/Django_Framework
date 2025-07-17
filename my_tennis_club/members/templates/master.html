@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                color: #333;
+                text-align: center;
+            }
+            ul {
+                list-style-type: none; 
+                padding: 0;
+            }
+            li {
+                background: #fff;
+                margin: 10px 0;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            li:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.86);
+                opacity: 1;
+            }
+            a {
+                text-decoration: none;
+                color: #007BFF; /* Color azul para enlaces */
+            }
+            a:hover {
+                text-decoration: underline; /* Subrayar en hover */
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+            }
+            .first_container {
+                max-width: 1200px;
+                margin: auto;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                margin-top: 20px;
+            }
+            .header {
+                background: linear-gradient(to right, #74f0eaff, #319795);
+                padding: 20px;
+                border-radius: 5px;
+                color: white;
+            }
+            .footer {
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <div class="first_container">
+    <body>
+        <div class="header">
+        <h1>Plantilla Base</h1>
+        </div>
+        <br>
+        <img src=https://media.istockphoto.com/id/1403644222/es/foto/la-ilustraci%C3%B3n-muestra-el-enrutamiento-de-paquetes-ip-a-trav%C3%A9s-de-internet-una-computadora-lan.jpg?s=612x612&w=0&k=20&c=fA7c44z5fZpu93ZSP6uW6Swhde6e7FJysgpOQn6nyks= width="300" height="300">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <footer>
+        <p>Copyright &copy; 2021 My Tennis Club</p>
+    </footer>
+    </div>
+    </body>
+</html>
